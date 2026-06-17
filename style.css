@@ -4,11 +4,19 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-family: 'Noto Serif SC', serif;
   color: #fff;
   background: #0a0a1a;
-  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
 }
 
 .section {
@@ -591,6 +599,24 @@ body {
   }
   100% {
     transform: translateX(300px) translateY(300px);
+    opacity: 0;
+  }
+}
+
+/* Floating Elements */
+@keyframes floatDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
 }
