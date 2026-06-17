@@ -121,7 +121,7 @@ function createFloatingElement() {
   element.appendChild(img);
   
   const left = Math.random() * 100;
-  const size = 40 + Math.random() * 40;
+  const size = 60 + Math.random() * 60;
   const duration = 10 + Math.random() * 15;
   const delay = Math.random() * 3;
   
