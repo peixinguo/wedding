@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Original large files
+*.flac
+*.JPEG
+
+# Python
+__pycache__/
+*.pyc
